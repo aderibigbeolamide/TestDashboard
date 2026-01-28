@@ -1,5 +1,6 @@
 import React from 'react';
 import { Home, Umbrella, Banknote, Smartphone, PlusCircle, X } from 'lucide-react';
+import logo from '../../assets/logo.png';
 
 interface Sidebar2Props {
     isOpen?: boolean;
@@ -26,7 +27,7 @@ const Sidebar2 = ({ isOpen = false, onClose }: Sidebar2Props) => {
                         <div className="flex items-center gap-2">
                             {/* Logo */}
                             <div className="bg-white text-slate-900 rounded-full w-8 h-8 flex-shrink-0 flex items-center justify-center overflow-hidden">
-                                <img src="/src/assets/logo.png" alt="Logo" className="w-full h-full object-cover" />
+                                <img src={logo} alt="Logo" className="w-full h-full object-cover" />
                             </div>
                             <h1 className="text-lg font-serif font-medium leading-tight whitespace-nowrap">
                                 First Road Advisors

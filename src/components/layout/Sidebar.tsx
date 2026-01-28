@@ -1,5 +1,8 @@
 import React from 'react';
 import { Home, List, Users, Banknote, Presentation, FileText, X } from 'lucide-react';
+import bettermentLogo from '../../assets/betterment_logo.png';
+import settingsIcon from '../../assets/settings_icon.png';
+import logoutIcon from '../../assets/logout_icon.png';
 
 interface SidebarProps {
     isOpen?: boolean;
@@ -23,7 +26,7 @@ const Sidebar = ({ isOpen = false, onClose }: SidebarProps) => {
             `}>
                 <div className="p-6 flex justify-between items-start">
                     <div className="flex items-center gap-3">
-                        <img src="/src/assets/betterment_logo.png" alt="Betterment" className="w-8 h-8 object-contain" />
+                        <img src={bettermentLogo} alt="Betterment" className="w-8 h-8 object-contain" />
                         <div className="flex flex-col leading-none">
                             <span className="text-yellow-400 text-xl font-bold">Betterment</span>
                             <span className="text-white font-light text-xs tracking-wide">at Work</span>
@@ -47,11 +50,11 @@ const Sidebar = ({ isOpen = false, onClose }: SidebarProps) => {
 
                     <div className="my-4 px-6 text-xs text-gray-400 uppercase tracking-wider">Your Account</div>
                     <NavItem
-                        icon={<img src="/src/assets/settings_icon.png" alt="Settings" className="w-5 h-5 object-contain" />}
+                        icon={<img src={settingsIcon} alt="Settings" className="w-5 h-5 object-contain" />}
                         label="Settings"
                     />
                     <NavItem
-                        icon={<img src="/src/assets/logout_icon.png" alt="Logout" className="w-5 h-5 object-contain" />}
+                        icon={<img src={logoutIcon} alt="Logout" className="w-5 h-5 object-contain" />}
                         label="Log out"
                     />
                 </nav>

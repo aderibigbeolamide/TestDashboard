@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Sidebar from './Sidebar';
 import { Menu } from 'lucide-react';
+import bettermentLogo from '../../assets/betterment_logo.png';
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
     const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -17,7 +18,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
                             <Menu size={24} />
                         </button>
                         <div className="flex items-center gap-3">
-                            <img src="/src/assets/betterment_logo.png" alt="Betterment" className="w-8 h-8 object-contain" />
+                            <img src={bettermentLogo} alt="Betterment" className="w-8 h-8 object-contain" />
                             <div className="flex flex-col leading-none">
                                 <span className="text-yellow-500 text-lg font-bold">Betterment</span>
                                 <span className="text-gray-600 font-light text-xs tracking-wide">at Work</span>
