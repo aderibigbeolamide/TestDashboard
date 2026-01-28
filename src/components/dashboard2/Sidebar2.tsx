@@ -92,11 +92,10 @@ const Sidebar2 = ({ isOpen = false, onClose }: Sidebar2Props) => {
 
 interface NavItemProps {
     icon: React.ReactNode;
-    active?: boolean;
     className?: string;
 }
 
-const NavItem = ({ icon, active = false, className = '' }: NavItemProps) => {
+const NavItem = ({ icon, className = '' }: NavItemProps) => {
     return (
         <div className={`cursor-pointer transition-colors w-10 h-10 flex items-center justify-center rounded-lg ${className} ${!className.includes('bg-') && 'text-slate-400 hover:text-white'}`}>
             {icon}

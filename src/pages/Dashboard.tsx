@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import StatsCard from '../components/dashboard/StatsCard';
 import DonutChart from '../components/dashboard/DonutChart';
 import SourcesTable from '../components/dashboard/SourcesTable';
